@@ -1,0 +1,41 @@
+.carouselContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 20px;
+  .content {
+    flex-shrink: 0;
+    display: flex;
+    min-width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+    transform: translateX(-100%);
+    animation: moveFrom 20s linear infinite;
+  }
+}
+.carouselContainer:hover .content {
+  animation-play-state: paused;
+}
+
+.img {
+  // width: 250px;
+  height: 380px;
+  object-fit: cover;
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+.title {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+@keyframes moveFrom {
+  from {
+    transform: translatex(-100%);
+  }
+  to {
+    transform: translatex(0);
+  }
+}

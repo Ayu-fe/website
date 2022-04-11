@@ -12,5 +12,5 @@
 
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover {
-  color: #fff;
+  color: #ddd;
 }

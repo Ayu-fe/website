@@ -25,7 +25,7 @@ export default function UmiLayout({
           onClick={handleClick}
         >
           <Menu.Item key="/">首页</Menu.Item>
-          <Menu.Item key="/work">技术博客</Menu.Item>
+          <Menu.Item key="/blog">技术博客</Menu.Item>
           <Menu.Item key="/life">生活随笔</Menu.Item>
           <Menu.Item key="/music_blog">音乐与我</Menu.Item>
           <Menu.Item key="/brove">奇思妙想</Menu.Item>
