@@ -1,0 +1,16 @@
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after {
+  display: none !important;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after {
+  display: none !important;
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover {
+  color: #ddd;
+}

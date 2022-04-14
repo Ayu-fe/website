@@ -1,0 +1,60 @@
+{
+  // eslint  ------- settings start -------
+  "eslint.packageManager": "npm", // 控制用于解析ESLint库的包管理器
+  "eslint.lintTask.enable": true, // 是否为整个工作区文件夹提供lint任务
+  "eslint.format.enable": true, //启用ESLint作为已验证文件的格式化程序，如果启用，请确保禁用其他格式化程序
+  "[javascript]": {
+    "editor.formatOnSave": true, // 保存时格式化
+    "editor.formatOnPaste": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true, // 保存时格式化
+    "editor.formatOnPaste": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true, // 保存时格式化
+    "editor.formatOnPaste": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "eslint.workingDirectories": [
+    // ESLint使用的工作目录
+    {
+      "pattern": "src"
+    }
+  ],
+  "eslint.run": "onType", // 运行 eslint 的时间，onType 是输入时
+  //   "eslint.validate": [   // 指定要强制校验的文件的语言标识符数组
+  //      "typescript",
+  //      "typescriptreact"
+  //    ],
+  // eslint  ------- settings end -------
+  // stylelint  ------- settings start -------
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.stylelint": true
+  },
+  "stylelint.autoFixOnSave": true,
+  "stylelint.validate": [
+    "css",
+    "less",
+    "scss",
+    "typescript",
+    "typescriptreact"
+  ],
+  // stylelint  ------- settings end -------
+
+  "editor.tabSize": 2, //tab 缩进2个
+  "git.rebaseWhenSync": true // 使用 rebase 更新代码
+}
