@@ -3,16 +3,19 @@
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  gap: 20px;
   .content {
     flex-shrink: 0;
     display: flex;
+    padding: 0 10px;
     min-width: 100%;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
     transform: translateX(-100%);
     animation: moveFrom 20s linear infinite;
   }
+  // .secondContent {
+  //   margin-left: 20px;
+  // }
 }
 .carouselContainer:hover .content {
   animation-play-state: paused;

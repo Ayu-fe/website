@@ -1,4 +1,5 @@
 import * as React from 'react'
+import clsx from 'clsx'
 import style from './index.less'
 
 export interface ICard {
@@ -24,7 +25,7 @@ const Carousel: React.FC<ICarouselParams> = (props) => {
           </div>
         ))}
       </div>
-      <div className={style.content}>
+      <div className={clsx(style.content, style.secondContent)}>
         {cards.map((item) => (
           <div>
             <div>
