@@ -1,0 +1,126 @@
+.container {
+  width: 100%;
+  .header {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.25s;
+    }
+    .bgBlur {
+      filter: blur(2px);
+      transform: scale(1.05);
+    }
+    .search {
+      width: 30%;
+      height: 50px;
+      transition: all 0.25s;
+      box-shadow: rgb(0 0 0) 0 0 10px;
+      border-radius: 30px;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.25);
+      padding: 5px 15px;
+      line-height: 50px;
+      box-sizing: border-box;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      .input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        text-align: center;
+        display: block;
+        font-size: 16px;
+      }
+      .input:focus {
+        color: rgba(0, 0, 0, 0.8);
+      }
+      .input:focus .bg {
+        filter: blur(5px);
+      }
+      .input::-webkit-input-placeholder {
+        color: #fff;
+      }
+    }
+    .searchFocus {
+      width: 40%;
+      background-color: rgba(255, 255, 255, 0.9) !important;
+    }
+    .search:hover {
+      width: 40%;
+      background-color: rgba(255, 255, 255, 0.55);
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .search:hover .input::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .searchBtn {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 15px;
+      top: 5px;
+      transition: all 0.25s;
+      color: #000;
+      text-align: center;
+      line-height: 40px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .searchBtn:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    .title {
+      font-size: 18px;
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+      text-align: center;
+      color: #ddd;
+    }
+  }
+
+  .content {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    // background-color: rgba(245, 245, 245, 1);
+    // background-color: #efefef;
+    background-color: #f4f5f5;
+    .left {
+      width: 5%;
+    }
+    .right {
+      width: 25%;
+      height: 300px;
+      padding: 20px 0;
+      .rightContent {
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+        // background-color: rgba(255, 255, 255, 0.55);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    .mid {
+      width: 70%;
+      padding: 20px;
+    }
+  }
+}
