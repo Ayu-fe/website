@@ -19,7 +19,7 @@ export default function UmiLayout({
     <Layout className={style.layout}>
       <Header className={style.header}>
         <Menu
-          defaultSelectedKeys={['/']}
+          defaultSelectedKeys={['/blog']}
           mode="horizontal"
           className={style.menu}
           onClick={handleClick}
