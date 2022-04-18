@@ -14,3 +14,6 @@ export interface BlogListItem {
 
 export const getBlogList = (params?: Record<string, any>) =>
   get('/blog_api/blog/list', params) as Promise<BlogListItem[]>
+
+export const getBlogById = (params: { id: number }) =>
+  get('/blog_api/blog/content', params) as Promise<BlogListItem>

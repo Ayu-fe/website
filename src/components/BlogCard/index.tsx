@@ -10,7 +10,7 @@ type IProps = {
 const BlogCard: React.FC<IProps> = (props) => {
   const { data } = props
   const handleClick = () => {
-    history.push(`/blog/article/?id=${data.id}`)
+    history.push(`/blog/article/`, { id: data.id })
   }
   return (
     <div className={style.cardContainer} onClick={handleClick}>

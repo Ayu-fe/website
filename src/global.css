@@ -14,3 +14,48 @@
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover {
   color: #ddd;
 }
+
+h1 {
+  font-size: 30px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+pre {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+code {
+  background-color: #fff5f5;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #ff502c;
+}
+
+blockquote {
+  color: #444;
+  background-color: #f8f8f8;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+blockquote p {
+  padding: 10px;
+}
+
+table {
+  border: 1px solid #fff5f5;
+  min-width: 100%;
+}
+
+td {
+  text-align: center;
+  border-bottom: 1px solid #fff5f5;
+  max-width: 200px;
+  padding: 10px;
+}
+
+th {
+  background-color: #fff5f5;
+  line-height: 50px;
+}
