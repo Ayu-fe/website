@@ -11,8 +11,9 @@
     "rootDir": "src",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
       // "*": ["node_modules/*", "src/typings/*"]
+      "@@/*": ["src/.umi/*"]
     },
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
