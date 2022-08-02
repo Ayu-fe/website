@@ -39,14 +39,14 @@ export default function IndexPage() {
         </div>
       </div>
       <div className={styles.module}>
-        <HomeCard
+        {/* <HomeCard
           title="商米的设备"
           content="关于你啊结束打卡嘉陵道街烂打本会计啊啥的空间爱打瞌睡吧啊看见的刷卡机看见啊好开森都不卡加班快就把深刻的啊可敬可嘉，沙嗲阿布阿的不阿斯顿哈哈卡迪爸爸侃大山打卡很大很大就啊的空间啊活动空间阿花看见都好啊科技活动看看好愧疚啊还得上课就好卡好"
           pic_link="https://img95.699pic.com/photo/40094/7630.jpg_wh300.jpg"
           type="left"
           to_link="/blog"
           jump_text="查看更多"
-        ></HomeCard>
+        ></HomeCard> */}
 
         <HomeCard
           title="商米的设备"
@@ -57,14 +57,14 @@ export default function IndexPage() {
           jump_text="敬请期待"
         ></HomeCard>
       </div>
-      <div className={styles.pic}>
+      {/* <div className={styles.pic}>
         <Carousel cards={cards}></Carousel>
-      </div>
+      </div> */}
       <div className={styles.callMe}>
-        <div>联系我</div>
+        {/* <div>联系我</div>
         <div>QQ: 1979474549</div>
         <div>微信: 13065071223</div>
-        <div>电话: 13065071223</div>
+        <div>电话: 13065071223</div> */}
         {/* <div>欢迎和我成为朋友</div> */}
       </div>
     </div>

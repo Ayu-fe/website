@@ -26,13 +26,13 @@ export default function UmiLayout({
         >
           <Menu.Item key="/">首页</Menu.Item>
           <Menu.Item key="/blog">技术博客</Menu.Item>
-          <Menu.Item key="/life">生活随笔</Menu.Item>
+          {/* <Menu.Item key="/life">生活随笔</Menu.Item>
           <Menu.Item key="/music_blog">音乐与我</Menu.Item>
-          <Menu.Item key="/brove">奇思妙想</Menu.Item>
+          <Menu.Item key="/brove">奇思妙想</Menu.Item> */}
         </Menu>
       </Header>
       <Content className={style.content}>{children}</Content>
-      <Footer className={style.footer}>Footer</Footer>
+      <Footer className={style.footer}>备案号：<a href='https://beian.miit.gov.cn/'>京ICP备2022011266号</a></Footer>
     </Layout>
   )
 }
